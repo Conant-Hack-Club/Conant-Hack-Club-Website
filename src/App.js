@@ -1,17 +1,27 @@
-import logo from './logo.svg';
-import "bootstrap/dist/css/bootstrap.min.css";
+
+
+
 import './App.css';
-import CarouselScreen from "./components/CarouselScreen"
-import  MediaScreen from "./components/MediaScreen"
-import  Navbar from "./components/Navbar"
+import React from 'react';
+import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
+import HomeScreen from './components/HomeScreen'
+import ResourcesScreen from "./components/ResourcesScreen";
+import AboutUsScreen from "./components/AboutUsScreen";
+import ProjectsScreen from "./components/ProjectsScreen";
+import  TopNavbar from "./components/Navbar"
 
 function App() {
   return (
     <div className="App">
-      <Navbar />
-      <CarouselScreen />
-      <br></br>
-      <MediaScreen />
+      <Router>
+      <TopNavbar />
+        <Switch>
+          <Route path="/" exact component={() => <HomeScreen />}></Route>
+          <Route path="/about" exact component={() => <AboutUsScreen />}></Route>
+          <Route path="/projects" exact component={() => <ProjectsScreen />}></Route>
+          <Route path="/resources" exact component={() => <ResourcesScreen />}></Route>
+        </Switch>
+      </Router>
     </div>
   );
 }

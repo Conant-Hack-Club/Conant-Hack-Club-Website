@@ -1,7 +1,7 @@
 import React from 'react'
 import { Carousel } from 'react-bootstrap'
 
-export default function CarouselScreen() {
+function CarouselScreen() {
     return (
       <Carousel className="carousel">
         <Carousel.Item className="carousel-item">
@@ -48,3 +48,5 @@ export default function CarouselScreen() {
       </Carousel>
     );
 }
+
+export default CarouselScreen;
