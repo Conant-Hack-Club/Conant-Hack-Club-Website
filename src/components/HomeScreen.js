@@ -6,7 +6,6 @@ export default function HomeScreen() {
     return (
         <div>
             <CarouselScreen/>
-            <br></br>
             <MediaScreen />
         </div>
     )
