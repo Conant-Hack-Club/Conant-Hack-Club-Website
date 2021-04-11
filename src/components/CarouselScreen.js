@@ -4,18 +4,23 @@ import logo from '../static/images/conantSchool.jpg'
 import CHCLogo from '../static/images/chc.png'
 import { BrowserRouter as Router, Route, Switch, Link } from 'react-router-dom';
 
+
 function CarouselScreen() {
     return (
       <Carousel className="carousel">
         <Carousel.Item className="carousel-item">
           <a href = "https://devpost.com/">
             <img
-            className="d-block w-100"
+            //className="d-block w-100"
             src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQeqpm-PDWz8jwlavFrBu-6KRuoZXHca38VOQ&usqp=CAU"
             alt="Hackathon!"
-            style = {{opacity:0.5}}
+            height = "500px"
+            //width = "auto"
+            //objectFit = "contain"
+            style = {{opacity:0.5, transform: `translate(${29}vw, ${0}px)`}}
             />
           </a>
+
           
           <Carousel.Caption>
             <h3>Upcoming Hackathon!</h3>
@@ -26,12 +31,13 @@ function CarouselScreen() {
 
         <Carousel.Item className="carousel-item">
           <img
-            className="d-block w-100"
             src="https://ashayp.com/images/hackclublogo.png"
             alt="ProjectsPromo"
-            height = "auto"
+            height = "500px"
+            color = "gray"
             width = "auto"
-            style = {{opacity:0.5}}
+            objectFit = "none"
+            style = {{opacity:0.4, transform: `translate(${35.8}vw, ${0}px)`}}
           />
 
           <Carousel.Caption style={{ color: 'blue' }}>
@@ -45,12 +51,12 @@ function CarouselScreen() {
         <a href = "https://d211.zoom.us/j/97478593700?pwd=MThFYnBZMDQ0UXdiK3ZJL3VubCtHZz09#success">
           <div className="imageDiv">
             <img
-              className="d-block w-100"
+              //className="d-block w-100"
               src={CHCLogo}
               alt="Hack Club"
-              height="100%"
+              height="500px"
               width="auto"
-              style = {{opacity:0.5}}
+              style = {{opacity:0.5, transform: `translate(${10}vw, ${0}px)`}}
             />
           </div>
           </a>
