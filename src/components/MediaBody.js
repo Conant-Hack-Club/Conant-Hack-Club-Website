@@ -1,8 +1,13 @@
-import React from 'react'
+import React, {useState, useEffect} from 'react'
 import { Media  } from 'react-bootstrap'
 import "../static/css/mediascreen.css";
 
 export default function MediaBody(props) {
+    const [link, setLink] = useState("")
+
+    useEffect(() => {
+        setLink("../" + props.name + ".jpg")
+    })
     return (
         <div className = "mediaBody">
             <Media>
@@ -10,7 +15,7 @@ export default function MediaBody(props) {
                     width={64}
                     height={64}
                     className="mr-3"
-                    src="https://api.compscikids.net/getImage?dir=images&name=25f43e648ae92bbc0b65b4004479ac59"
+                    src={link}
                     alt="Generic placeholder"
                 />
                 <Media.Body>
