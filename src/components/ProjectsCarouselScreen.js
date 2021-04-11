@@ -12,7 +12,7 @@ export default function ProjectsCarouselScreen() {
             alt="First Project"
           />
           <Carousel.Caption>
-            <h2>First Project</h2>
+            <h2>First Project sdfslkdfjsldkfj</h2>
             <h3>CONTRIBUTORS: SOHAM, SAKSHAM</h3>
             <p>
               This is a nice description of the project. This is a nice
@@ -28,7 +28,7 @@ export default function ProjectsCarouselScreen() {
           />
 
           <Carousel.Caption>
-              <h2>Second Project</h2>
+              <h2>Second Project asdkfjsadfkljsadflkj</h2>
               <h3>CONTRIBUTORS: SOHAM, SAKSHAM</h3>
               <p>
                 This is a nice description of the project. This is a nice
