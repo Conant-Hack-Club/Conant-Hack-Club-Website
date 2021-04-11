@@ -1,14 +1,36 @@
 import React from 'react'
+import '../static/css/aboutUs.css'
 
 export default function AboutUsScreen() {
     return (
-      <div>
-        <h1>ABOUT US</h1>
-        <h2>CONANT HACK CLUB IS A AUGAEOIYFGWEILYGFWEUYIFYFG</h2>
-        <h1>LEADERS:</h1>
-        <h1>ASHAY: THE LORD AND SAVIOR</h1>
-        <h1>LABDHI: UNITY LEADER</h1>
-        <h1>SOHUM: UNITY LEADER</h1>
+      <div className="full__page">
+        <h1 className="about__us">About The Leaders</h1>
+        <div className="leaders__page">
+          <div className="leaders__div">
+            <div className="bio__div">
+              Ashay Parikh
+            </div>
+            <div className="pic__div">
+              <img className="person__pic" src="/ashay.jpeg" alt="ASHAY"></img>
+            </div>
+          </div>
+          <div className="leaders__div">
+            <div className="pic__div">
+              <img className="person__pic" src="/labdhi.jpg" alt="LABDHI"></img>
+            </div>
+            <div className="bio__div">
+              Labdhi Jain
+            </div>
+          </div>
+          <div className="leaders__div">
+            <div className="bio__div">
+              Sohum Bhole
+            </div>
+            <div className="pic__div">
+              <img className="person__pic" src="sohum.jpg" alt="SOHUM"></img>
+            </div>
+          </div>
+        </div>
       </div>
     );
 }
