@@ -3,6 +3,10 @@ import { Carousel } from "react-bootstrap";
 import logo from "../static/images/conantSchool.jpg";
 
 export default function ProjectsCarouselScreen() {
+
+    function handleClick() {
+        alert("whnnhkw")
+    }
     return (
       <Carousel className="carousel">
         <Carousel.Item className="carousel-item">
@@ -10,6 +14,7 @@ export default function ProjectsCarouselScreen() {
             className="d-block w-100"
             src="https://www.usglc.org/media/2016/09/800x400.png"
             alt="First Project"
+            onClick={handleClick}
           />
           <Carousel.Caption>
             <h2>First Project</h2>
@@ -58,4 +63,5 @@ export default function ProjectsCarouselScreen() {
         </Carousel.Item>
       </Carousel>
     );
+
 }
