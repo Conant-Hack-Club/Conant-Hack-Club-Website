@@ -11,7 +11,7 @@ export default function AboutUsScreen() {
               Ashay Parikh
             </div>
             <div className="pic__div">
-              <img className="person__pic" src="/ashay.jpeg" alt="ASHAY"></img>
+              <img className="person__pic" src="/ashay.jpg" alt="ASHAY"></img>
             </div>
           </div>
           <div className="leaders__div">
