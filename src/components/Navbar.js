@@ -1,14 +1,7 @@
 import React, {useState, useEffect} from 'react'
 import {Navbar, Nav, NavDropdown} from 'react-bootstrap';
-import { Link } from 'react-router-dom';
-// import firebase from "./firebase";
 import {db} from "./firebase"
-import ProjectsCarouselScreen from "./ProjectsCarouselScreen";
 export default function TopNavbar() {
-
-    // const data = {
-    //
-    // }
     const [data, setData] = useState([]);
 
     useEffect(() => {
