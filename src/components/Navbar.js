@@ -8,7 +8,7 @@ export default function TopNavbar() {
         db.collection('years').onSnapshot(snapshot => {
             setData(snapshot.docs.map(doc => ({
                 id: doc.id,
-                year: doc.data()
+                firedata: doc.data()
             })))
         })
     }, []);
@@ -26,8 +26,8 @@ export default function TopNavbar() {
                 </Nav>
                 <NavDropdown  id="nav" title="Projects" >
                     {
-                        data.map(({id, year}) => (
-                            <NavDropdown.Item key={id} href={"/projects/" + year.year + "&" + id}>{year.year}</NavDropdown.Item>
+                        data.map(({id, firedata}) => (
+                            <NavDropdown.Item key={id} href={"/projects/" + firedata.year + "&" + id}>{firedata.year}</NavDropdown.Item>
                         ))
                     }
                 </NavDropdown>
