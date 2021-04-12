@@ -30,18 +30,19 @@ export default function ProjectsCarouselScreen({year, postId}) {
       {
         projects.map(({id, data}) => (
             <Carousel.Item key={id}>
+              <a href = {data.pictureUrl}>
               <img
-                  src="https://www.usglc.org/media/2016/09/800x400.png"
+                  src={data.picturesrc}
+
                   alt = {data.name}
                   width={2000}
                   height = {1000}
-              />
+              /></a>
               <Carousel.Caption>
-                <h2>mhdchm cd Project sdfslkdfjsldkfj</h2>
-                <h3>CONTRIBUTORS: SOHAM, SAKSHAM</h3>
+                <h2>{data.name}</h2>
+                <h3>{data.creator}</h3>
                 <p>
-                  This is a nice description of the project. This is a nice
-                  description of the project.
+                  {data.description}
                 </p>
               </Carousel.Caption>
             </Carousel.Item>
