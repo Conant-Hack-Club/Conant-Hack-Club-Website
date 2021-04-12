@@ -1,17 +1,11 @@
 import React, {useState, useEffect} from 'react'
 import {Navbar, Nav, NavDropdown} from 'react-bootstrap';
-// import firebase from "./firebase";
 import {db} from "./firebase"
-import ProjectsCarouselScreen from "./ProjectsCarouselScreen";
 export default function TopNavbar() {
-
-    // const data = {
-    //
-    // }
     const [data, setData] = useState([]);
 
     useEffect(() => {
-        db.collection('projects').onSnapshot(snapshot => {
+        db.collection('years').onSnapshot(snapshot => {
             setData(snapshot.docs.map(doc => ({
                 id: doc.id,
                 year: doc.data()
@@ -30,15 +24,12 @@ export default function TopNavbar() {
                     <Nav.Link href="/about">About Us</Nav.Link>
                     <Nav.Link href="/resources">Resources</Nav.Link>
                 </Nav>
-                <NavDropdown id="nav" title="Projects" >
+                <NavDropdown  id="nav" title="Projects" >
                     {
-                        data.map(({year}) => (
-                            <NavDropdown.Item href="/projects">{year.year}</NavDropdown.Item>
+                        data.map(({id, year}) => (
+                            <NavDropdown.Item key={id} href={"/projects/" + year.year + "&" + id}>{year.year}</NavDropdown.Item>
                         ))
                     }
-                    {/*<NavDropdown.Item href="/projects">2020-2021</NavDropdown.Item>*/}
-                    {/*<NavDropdown.Item href="#action/3.2">2021-2022</NavDropdown.Item>*/}
-                    {/*<NavDropdown.Item href="#action/3.3">Something</NavDropdown.Item>*/}
                 </NavDropdown>
             </Navbar.Collapse>
         </Navbar>
