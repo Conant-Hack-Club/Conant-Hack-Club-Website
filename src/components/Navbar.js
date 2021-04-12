@@ -39,7 +39,7 @@ export default function TopNavbar() {
                 <NavDropdown  id="nav" title="Projects" >
                     {
                         data.map(({id, year}) => (
-                            <NavDropdown.Item href="/projects">{year.year}</NavDropdown.Item>
+                            <NavDropdown.Item key={id} href={"/projects/" + year.year}>{year.year}</NavDropdown.Item>
                         ))
                     }
                     {/*<NavDropdown.Item href="/projects">2020-2021</NavDropdown.Item>*/}
