@@ -1,12 +1,22 @@
-import React, { useEffect } from 'react'
+import React, { useEffect, useState } from 'react'
 import { Carousel } from "react-bootstrap";
 import logo from "../static/images/conantSchool.jpg";
+import {db} from "./firebase"
 
 export default function ProjectsCarouselScreen(year) {
 
+  const [projects, setProjects] = useState([])
+
   useEffect(() => {
+
+    console.log(year)
+
+    db.collection('years').doc(year.postId).collection("projects").onSnapshot((snapshot) => {
+      setProjects(snapshot.docs.map((doc) => doc.data()));
+    })
+    console.log(projects)
     console.log("Year " + year.year);
-  })
+  }, [])
 
   function getProjectsFromYear(year){
     /*TODO: logic for getting and setting the carousel items
