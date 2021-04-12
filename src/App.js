@@ -22,6 +22,7 @@ function App() {
             path="/about"
             exact
             component={() => <AboutUsScreen />}
+            
           ></Route>
           <Route
             path="/projects"
