@@ -30,7 +30,7 @@ export default function ProjectsCarouselScreen({year, postId}) {
       {
         projects.map(({id, data}) => (
             <Carousel.Item key={id}>
-              <a href = {data.pictureUrl}>
+              <a href = {data.projectUrl}>
               <img
                   src={data.picturesrc}
 
