@@ -7,7 +7,7 @@ import AboutUsScreen from "./components/AboutUsScreen";
 import ProjectsScreen from "./components/ProjectsScreen";
 import  TopNavbar from "./components/Navbar"
 
-function App() {
+export default function App() {
   return (
     //0065ea: blue
     //ec3750: red
@@ -25,8 +25,7 @@ function App() {
             
           ></Route>
           <Route
-            path="/projects"
-            exact
+            path="/projects/:handle"
             component={() => <ProjectsScreen />}
           ></Route>
           <Route
@@ -39,5 +38,3 @@ function App() {
     </div>
   );
 }
-
-export default App;

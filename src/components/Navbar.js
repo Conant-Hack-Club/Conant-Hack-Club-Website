@@ -12,13 +12,7 @@ export default function TopNavbar() {
     const [data, setData] = useState([]);
 
     useEffect(() => {
-        // firebase.database().ref("Projects").once('value', function (snapshot) {
-        //     snapshot.forEach(function (yearRef) {
-        //         alert(yearRef.key);
-        //         setData(data)
-        //     });
-        // });
-        db.collection('projects').onSnapshot(snapshot => {
+        db.collection('years').onSnapshot(snapshot => {
             setData(snapshot.docs.map(doc => ({
                 id: doc.id,
                 year: doc.data()
@@ -40,12 +34,9 @@ export default function TopNavbar() {
                 <NavDropdown  id="nav" title="Projects" >
                     {
                         data.map(({id, year}) => (
-                            <NavDropdown.Item href="/projects">{year.year}</NavDropdown.Item>
+                            <NavDropdown.Item key={id} href={"/projects/" + year.year + "&" + id}>{year.year}</NavDropdown.Item>
                         ))
                     }
-                    {/*<NavDropdown.Item href="/projects">2020-2021</NavDropdown.Item>*/}
-                    {/*<NavDropdown.Item href="#action/3.2">2021-2022</NavDropdown.Item>*/}
-                    {/*<NavDropdown.Item href="#action/3.3">Something</NavDropdown.Item>*/}
                 </NavDropdown>
             </Navbar.Collapse>
         </Navbar>

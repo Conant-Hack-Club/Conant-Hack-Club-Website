@@ -11,15 +11,15 @@ export default function HomeScreen() {
             <div>
                 <CarouselScreen/>
             </div>
-            <br></br>
-            <br></br>
+            <br/>
+            <br/>
             <div className = "mainHome">
                 <MediaScreen />
                 <br></br>
                 <CalendarHome />
             </div>
-            <br></br>
-            <br></br>
+            <br/>
+            <br/>
             <div style={{justifyContent:'center', textAlign: 'center', alignItems:'center'}}>
                 <h1>What we do:</h1>
                 <p>Conant Hack Club is a group full of enthusiastic students willing to explore 
