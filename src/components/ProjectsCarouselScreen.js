@@ -3,7 +3,7 @@ import { Carousel } from "react-bootstrap";
 import logo from "../static/images/conantSchool.jpg";
 import {db} from "./firebase"
 
-export default function ProjectsCarouselScreen(year) {
+export default function ProjectsCarouselScreen({year, postId}) {
 
   const [projects, setProjects] = useState([])
 
@@ -11,11 +11,11 @@ export default function ProjectsCarouselScreen(year) {
 
     console.log(year)
 
-    db.collection('years').doc(year.postId).collection("projects").onSnapshot((snapshot) => {
+    db.collection('years').doc(postId).collection("projects").onSnapshot((snapshot) => {
       setProjects(snapshot.docs.map((doc) => doc.data()));
     })
     console.log(projects)
-    console.log("Year " + year.year);
+    console.log("Year " + year);
   }, [])
 
   function getProjectsFromYear(year){
