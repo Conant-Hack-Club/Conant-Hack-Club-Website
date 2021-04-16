@@ -16,7 +16,7 @@ export default function TopNavbar() {
     return (
         //CAN USE TRANSPARENT
         <Navbar bg="light" expand="lg" fixed="top" variant="blue">
-            <Navbar.Brand href="/">CONANT HACK CLUB</Navbar.Brand>
+            <Navbar.Brand  href="/">CONANT HACK CLUB</Navbar.Brand>
             <Navbar.Toggle aria-controls="basic-navbar-nav"/>
             <Navbar.Collapse id="basic-navbar-nav">
                 <Nav className="mr-auto">
