@@ -1,0 +1,27 @@
+{
+  "files": {
+    "main.css": "/hackClubWebsite/static/css/main.666184be.chunk.css",
+    "main.js": "/hackClubWebsite/static/js/main.a18f8374.chunk.js",
+    "main.js.map": "/hackClubWebsite/static/js/main.a18f8374.chunk.js.map",
+    "runtime-main.js": "/hackClubWebsite/static/js/runtime-main.680bbf32.js",
+    "runtime-main.js.map": "/hackClubWebsite/static/js/runtime-main.680bbf32.js.map",
+    "static/css/2.a697c562.chunk.css": "/hackClubWebsite/static/css/2.a697c562.chunk.css",
+    "static/js/2.a02b3b06.chunk.js": "/hackClubWebsite/static/js/2.a02b3b06.chunk.js",
+    "static/js/2.a02b3b06.chunk.js.map": "/hackClubWebsite/static/js/2.a02b3b06.chunk.js.map",
+    "static/js/3.cfd6b0de.chunk.js": "/hackClubWebsite/static/js/3.cfd6b0de.chunk.js",
+    "static/js/3.cfd6b0de.chunk.js.map": "/hackClubWebsite/static/js/3.cfd6b0de.chunk.js.map",
+    "index.html": "/hackClubWebsite/index.html",
+    "static/css/2.a697c562.chunk.css.map": "/hackClubWebsite/static/css/2.a697c562.chunk.css.map",
+    "static/css/main.666184be.chunk.css.map": "/hackClubWebsite/static/css/main.666184be.chunk.css.map",
+    "static/js/2.a02b3b06.chunk.js.LICENSE.txt": "/hackClubWebsite/static/js/2.a02b3b06.chunk.js.LICENSE.txt",
+    "static/media/chc.6f7e7f41.png": "/hackClubWebsite/static/media/chc.6f7e7f41.png",
+    "static/media/conantSchool.c22309dd.jpg": "/hackClubWebsite/static/media/conantSchool.c22309dd.jpg"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.680bbf32.js",
+    "static/css/2.a697c562.chunk.css",
+    "static/js/2.a02b3b06.chunk.js",
+    "static/css/main.666184be.chunk.css",
+    "static/js/main.a18f8374.chunk.js"
+  ]
+}
