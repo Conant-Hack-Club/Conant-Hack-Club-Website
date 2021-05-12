@@ -1,6 +1,6 @@
 import './App.css';
 import React from 'react';
-import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
+import { BrowserRouter, Route, Switch } from 'react-router-dom';
 import HomeScreen from './components/HomeScreen'
 import ResourcesScreen from "./components/ResourcesScreen";
 import AboutUsScreen from "./components/AboutUsScreen";
@@ -11,8 +11,8 @@ export default function App() {
   return (
     //0065ea: blue
     //ec3750: red
-    <div className="App">
-      <Router>
+    <main>
+      <BrowserRouter>
         <TopNavbar />
         <br />
         <br />
@@ -34,7 +34,7 @@ export default function App() {
             component={() => <ResourcesScreen />}
           ></Route>
         </Switch>
-      </Router>
-    </div>
+      </BrowserRouter>
+    </main>
   );
 }
