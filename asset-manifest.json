@@ -1,8 +1,8 @@
 {
   "files": {
     "main.css": "/hackClubWebsite/static/css/main.666184be.chunk.css",
-    "main.js": "/hackClubWebsite/static/js/main.5c9ea889.chunk.js",
-    "main.js.map": "/hackClubWebsite/static/js/main.5c9ea889.chunk.js.map",
+    "main.js": "/hackClubWebsite/static/js/main.81c75806.chunk.js",
+    "main.js.map": "/hackClubWebsite/static/js/main.81c75806.chunk.js.map",
     "runtime-main.js": "/hackClubWebsite/static/js/runtime-main.7153a53e.js",
     "runtime-main.js.map": "/hackClubWebsite/static/js/runtime-main.7153a53e.js.map",
     "static/css/2.a697c562.chunk.css": "/hackClubWebsite/static/css/2.a697c562.chunk.css",
@@ -20,6 +20,6 @@
     "static/css/2.a697c562.chunk.css",
     "static/js/2.a02b3b06.chunk.js",
     "static/css/main.666184be.chunk.css",
-    "static/js/main.5c9ea889.chunk.js"
+    "static/js/main.81c75806.chunk.js"
   ]
 }
