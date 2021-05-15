@@ -16,7 +16,7 @@ function CarouselScreen() {
               src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQeqpm-PDWz8jwlavFrBu-6KRuoZXHca38VOQ&usqp=CAU"
               alt="Hackathon!"
               height = "700px"
-              //width = "auto"
+              width = "auto"
               //objectFit = "contain"
               style = {{opacity:0.5}}
               />
@@ -59,7 +59,7 @@ function CarouselScreen() {
                 src={CHCLogo}
                 alt="Hack Club"
                 height="700px"
-                width="auto"
+                width="100%"
                 style = {{opacity:1.5}}
               />
             </div>
