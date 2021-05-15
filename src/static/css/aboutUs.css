@@ -7,6 +7,13 @@
 
 
 .full__page{
+    background-color: rgb(209, 216, 236);
+    position: fixed;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    overflow: auto;
     height: 100%;
     text-align: center;
     padding: 2%;
@@ -35,4 +42,6 @@
     width: 100%;
     justify-content: center;
     font-weight: bold;
+    font-size: 40px;
 }
+
