@@ -33,7 +33,7 @@ export default function ProjectsGridScreen({year, postId}) {
 
                                     alt = {data.name}
                                     width="100%"
-                                    height = {200}
+                                    height = "auto"
                                 />
                                 <h3>{data.name}</h3>
                                 <h5>{data.creator}</h5>
@@ -42,13 +42,13 @@ export default function ProjectsGridScreen({year, postId}) {
                         </a>
                     </div>
                 ))}
-                {/* <div class="item">item 1</div>
+                <div class="item">item 1</div>
                 <div class="item">item 2</div>
                 <div class="item">item 3</div>
                 <div class="item">item 1</div>
                 <div class="item">item 2</div>
                 <div class="item">item 3</div>
-                <div class="item">item 1</div> */}
+                <div class="item">item 1</div>
             </div>
         </div>
     )
