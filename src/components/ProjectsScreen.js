@@ -8,7 +8,7 @@ export default function ProjectsScreen(){
         <div>
             <ProjectsCarouselScreen year={window.location.href.split("/")[4].split("&")[0]} postId={window.location.href.split("/")[4].split("&")[1]}/>
             <br></br>
-            <ProjectsGridScreen></ProjectsGridScreen>
+            <ProjectsGridScreen year={window.location.href.split("/")[4].split("&")[0]} postId={window.location.href.split("/")[4].split("&")[1]}/>
         </div>
     )
 }
