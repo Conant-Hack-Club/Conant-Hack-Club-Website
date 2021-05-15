@@ -7,16 +7,16 @@ import "../static/css/homescreen.css";
 
 export default function HomeScreen() {
     return (
-        <div>
+        <div color="green">
             <div>
                 <CarouselScreen/>
             </div>
             <br/>
             <br/>
             <div className = "mainHome">
-                <MediaScreen />
+                {/* <MediaScreen /> */}
                 <br></br>
-                <CalendarHome />
+                {/* <CalendarHome /> */}
             </div>
             <br/>
             <br/>

@@ -10,15 +10,17 @@ function CarouselScreen() {
       <Carousel className="carousel">
         <Carousel.Item className="carousel-item">
           <a href = "https://devpost.com/">
-            <img
-            //className="d-block w-100"
-            src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQeqpm-PDWz8jwlavFrBu-6KRuoZXHca38VOQ&usqp=CAU"
-            alt="Hackathon!"
-            height = "500px"
-            //width = "auto"
-            //objectFit = "contain"
-            style = {{opacity:0.5, transform: `translate(${29}vw, ${0}px)`}}
-            />
+            <div style={{justifyContent:'center', textAlign: 'center', alignItems:'center', backgroundColor:'beige'}}>
+              <img
+              //className="d-block w-100"
+              src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQeqpm-PDWz8jwlavFrBu-6KRuoZXHca38VOQ&usqp=CAU"
+              alt="Hackathon!"
+              height = "500px"
+              //width = "auto"
+              //objectFit = "contain"
+              style = {{opacity:0.5}}
+              />
+            </div>
           </a>
 
           
@@ -30,6 +32,7 @@ function CarouselScreen() {
 
 
         <Carousel.Item className="carousel-item">
+        <div style={{justifyContent:'center', textAlign: 'center', alignItems:'center', backgroundColor:'beige'}}>
           <img
             src="https://ashayp.com/images/hackclublogo.png"
             alt="ProjectsPromo"
@@ -37,9 +40,9 @@ function CarouselScreen() {
             color = "gray"
             width = "auto"
             objectFit = "none"
-            style = {{opacity:0.4, transform: `translate(${35.8}vw, ${0}px)`}}
+            style = {{opacity:0.4}}
           />
-
+        </div>
           <Carousel.Caption style={{ color: 'blue' }}>
             <h3>Check Out Our Newest Projects</h3>
             <Link to="/projects" style={{ color: 'blue' }}>Click here to check them out!</Link>
@@ -50,14 +53,16 @@ function CarouselScreen() {
         <Carousel.Item className="carousel-item">
         <a href = "https://d211.zoom.us/j/97478593700?pwd=MThFYnBZMDQ0UXdiK3ZJL3VubCtHZz09#success">
           <div className="imageDiv">
-            <img
-              //className="d-block w-100"
-              src={CHCLogo}
-              alt="Hack Club"
-              height="500px"
-              width="auto"
-              style = {{opacity:0.5, transform: `translate(${10}vw, ${0}px)`}}
-            />
+            <div style={{justifyContent:'center', textAlign: 'center', alignItems:'center', backgroundColor:'beige'}}>
+              <img
+                //className="d-block w-100"
+                src={CHCLogo}
+                alt="Hack Club"
+                height="500px"
+                width="auto"
+                style = {{opacity:0.5}}
+              />
+            </div>
           </div>
           </a>
 

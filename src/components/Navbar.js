@@ -1,6 +1,7 @@
 import React, {useState, useEffect} from 'react'
 import {Navbar, Nav, NavDropdown} from 'react-bootstrap';
 import {db} from "./firebase"
+import CHCLogo from '../static/images/chc.png'
 export default function TopNavbar() {
     const [data, setData] = useState([]);
 
@@ -16,7 +17,9 @@ export default function TopNavbar() {
     return (
         //CAN USE TRANSPARENT
         <Navbar bg="light" expand="lg" fixed="top" variant="blue">
-            <Navbar.Brand  href="/">CONANT HACK CLUB</Navbar.Brand>
+            <Navbar.Brand  href="/"><img
+              src={CHCLogo}
+              height="70px" ></img></Navbar.Brand>
             <Navbar.Toggle aria-controls="basic-navbar-nav"/>
             <Navbar.Collapse id="basic-navbar-nav">
                 <Nav className="mr-auto">
