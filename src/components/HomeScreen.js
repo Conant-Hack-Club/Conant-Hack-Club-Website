@@ -29,6 +29,7 @@ export default function HomeScreen() {
                 <p>Conant Hack Club is a group full of enthusiastic students willing to explore 
                 Computer Science beyond the scope of the classroom. Our goal is to push the limits of our mind and 
                 share our knowledge with others. </p>
+                <p>We explore topics in AI, Unity, Neural Networks, Cloud Computing, and more!</p>
                 <p>Join us in exploring the wonderful subject known as Computer Science </p>
             </div>
             

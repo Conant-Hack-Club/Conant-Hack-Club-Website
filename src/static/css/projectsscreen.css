@@ -1,0 +1,11 @@
+.mainHome{display:inline-flex; flex-direction:row; gap:12px;}
+.grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    grid-gap: 12px;
+  }
+  
+  .item {
+    min-height: 200px;
+    background-color: #eee;
+  }

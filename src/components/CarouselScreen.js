@@ -39,13 +39,13 @@ function CarouselScreen() {
             height = "700px"
             color = "gray"
             width = "auto"
-            objectFit = "none"
+            //objectFit = "none"
             style = {{opacity:0.4}}
           />
         </div>
           <Carousel.Caption style={{ color: 'white' }}>
             <h3>Check Out Our Newest Projects</h3>
-            <Link to="/projects" style={{ color: 'white' }}>Click here to check them out!</Link>
+            <Link to="/projects/2020-2021&kgQoXF5xqztjzQE8pHWY" style={{ color: 'white' }}>Click here to check them out!</Link>
           </Carousel.Caption>
         </Carousel.Item>
 
