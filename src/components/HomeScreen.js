@@ -7,7 +7,7 @@ import "../static/css/homescreen.css";
 
 export default function HomeScreen() {
     return (
-        <div color="green">
+        <div className = "homeStyle">
             <div>
                 <CarouselScreen/>
             </div>
@@ -21,10 +21,15 @@ export default function HomeScreen() {
             <br/>
             <br/>
             <div style={{justifyContent:'center', textAlign: 'center', alignItems:'center'}}>
-                <h1>What we do:</h1>
+                <h1 className = "textStyle">We are Conant Hack Club</h1>
+                <br></br>
+                <br></br>
+
+                <h2>What we do:</h2>
                 <p>Conant Hack Club is a group full of enthusiastic students willing to explore 
                 Computer Science beyond the scope of the classroom. Our goal is to push the limits of our mind and 
                 share our knowledge with others. </p>
+                <p>Join us in exploring the wonderful subject known as Computer Science </p>
             </div>
             
         </div>

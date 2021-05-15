@@ -10,12 +10,12 @@ function CarouselScreen() {
       <Carousel className="carousel">
         <Carousel.Item className="carousel-item">
           <a href = "https://devpost.com/">
-            <div style={{justifyContent:'center', textAlign: 'center', alignItems:'center', backgroundColor:'beige'}}>
+            <div style={{justifyContent:'center', textAlign: 'center', alignItems:'center', backgroundColor:"rgb(209, 216, 236)"}}>
               <img
               //className="d-block w-100"
               src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQeqpm-PDWz8jwlavFrBu-6KRuoZXHca38VOQ&usqp=CAU"
               alt="Hackathon!"
-              height = "500px"
+              height = "700px"
               //width = "auto"
               //objectFit = "contain"
               style = {{opacity:0.5}}
@@ -32,39 +32,39 @@ function CarouselScreen() {
 
 
         <Carousel.Item className="carousel-item">
-        <div style={{justifyContent:'center', textAlign: 'center', alignItems:'center', backgroundColor:'beige'}}>
+        <div style={{justifyContent:'center', textAlign: 'center', alignItems:'center', backgroundColor:"rgb(209, 216, 236)"}}>
           <img
             src="https://ashayp.com/images/hackclublogo.png"
             alt="ProjectsPromo"
-            height = "500px"
+            height = "700px"
             color = "gray"
             width = "auto"
             objectFit = "none"
             style = {{opacity:0.4}}
           />
         </div>
-          <Carousel.Caption style={{ color: 'blue' }}>
+          <Carousel.Caption style={{ color: 'white' }}>
             <h3>Check Out Our Newest Projects</h3>
-            <Link to="/projects" style={{ color: 'blue' }}>Click here to check them out!</Link>
+            <Link to="/projects" style={{ color: 'white' }}>Click here to check them out!</Link>
           </Carousel.Caption>
         </Carousel.Item>
 
 
         <Carousel.Item className="carousel-item">
-        <a href = "https://d211.zoom.us/j/97478593700?pwd=MThFYnBZMDQ0UXdiK3ZJL3VubCtHZz09#success">
+        {/* <a href = "https://d211.zoom.us/j/97478593700?pwd=MThFYnBZMDQ0UXdiK3ZJL3VubCtHZz09#success"> */}
           <div className="imageDiv">
-            <div style={{justifyContent:'center', textAlign: 'center', alignItems:'center', backgroundColor:'beige'}}>
+            <div style={{justifyContent:'center', textAlign: 'center', alignItems:'center', backgroundColor:"rgb(209, 216, 236)"}}>
               <img
                 //className="d-block w-100"
                 src={CHCLogo}
                 alt="Hack Club"
-                height="500px"
+                height="700px"
                 width="auto"
-                style = {{opacity:0.5}}
+                style = {{opacity:1.5}}
               />
             </div>
           </div>
-          </a>
+          {/* </a> */}
 
           <Carousel.Caption style={{ color: 'black' }}>
             <h3>Join Us at Conant Hack Club</h3>
