@@ -26,10 +26,10 @@ export default function ProjectsCarouselScreen({year, postId}) {
         projects.map(({id, data}) => (
             <Carousel.Item key={id}>
               <a href = {data.projectUrl}>
-              <div style={{justifyContent:'center', textAlign: 'center', alignItems:'center', backgroundColor:"#0065ea"}}>
+              <div style={{justifyContent:'center', textAlign: 'center', alignItems:'center', backgroundColor:"#0085ea"}}>
               <img
                   src={data.picturesrc}
-
+                  style={{maxWidth:"80%"}}
                   // className="person__pic"
                   style={{zIndex: "10", position: "sticky"}}
                   alt = {data.name}
