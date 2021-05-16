@@ -21,17 +21,18 @@ export default function HomeScreen() {
             <br/>
             <br/>
             <div className = "textBox">
+                <br></br>
                 <h1 className = "textStyle">We are Conant Hack Club</h1>
                 <br></br>
                 <img src="/conantlogo.png" alt="ConantLogo"></img>
                 <br></br>
 
                 <h2 style={{color: "#0065ea"}}>What we do:</h2>
-                <h5 style={{color: "#0065ea"}}>Conant Hack Club is a group full of enthusiastic students willing to explore
+                <h5 style={{color: "#0065ea",margin:"16px"}}>Conant Hack Club is a group full of enthusiastic students willing to explore
                 Computer Science beyond the scope of the classroom. Our goal is to push the limits of our mind and
                 share our knowledge with others. </h5>
-                <h5 style={{color: "#0065ea"}}>We explore topics in AI, Unity, Neural Networks, Cloud Computing, and more!</h5>
-                <h5 style={{color: "#0065ea"}}>Join us in exploring the wonderful subject known as Computer Science </h5>
+                <h5 style={{color: "#0065ea",margin:"16px"}}>We explore topics in AI, Unity, Neural Networks, Cloud Computing, and more!</h5>
+                <h5 style={{color: "#0065ea",margin:"16px"}}>Join us in exploring the wonderful subject known as Computer Science </h5>
             </div>
 
             <div class='light x1'></div>

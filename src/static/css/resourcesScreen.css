@@ -1,7 +1,7 @@
 .typer{
   display: inline-block;
   padding: 15px 25px;
-  font-size: 24px;
+  font-size: 16px;
   font-weight: normal;
   cursor: pointer;
   text-align: center;
@@ -22,6 +22,18 @@
   transform: translateY(4px);
 } */
 
+.topic_div{
+    /* display: flex; */
+    /*margin: 0 auto;*/
+    align-items: center;
+    /* height: 100%; */
+    background-color: white;
+    margin: 35px;
+    border-radius: 25px;
+
+
+    z-index: 12;
+}
 
 .screenStyle{
     text-align: center;
