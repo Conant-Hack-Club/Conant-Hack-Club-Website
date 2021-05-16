@@ -27,7 +27,7 @@ export default function HomeScreen() {
                 <br></br>
 
                 <h2 style={{color: "#0065ea"}}>What we do:</h2>
-                <h5 style={{color: "#0065ea"}}>Conant Hack Club is a group full of enthusiastic students willing to explore
+                <h5 style={{color: "#0065ea", width: '80%'}}>Conant Hack Club is a group full of enthusiastic students willing to explore
                 Computer Science beyond the scope of the classroom. Our goal is to push the limits of our mind and
                 share our knowledge with others. </h5>
                 <h5 style={{color: "#0065ea"}}>We explore topics in AI, Unity, Neural Networks, Cloud Computing, and more!</h5>

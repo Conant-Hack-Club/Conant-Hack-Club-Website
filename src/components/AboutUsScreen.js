@@ -18,7 +18,7 @@ export default function AboutUsScreen() {
       <br></br>
       <br></br>
       <br></br>
-      <h1 className="about__us">About The Leaders</h1>
+      <h1 className="about__us" style = {{color: 'white'}}>About The Leaders</h1>
       <div className="leaders__page" >
         <div className="leaders__div" onClick={clickAshay}>
           <div className="bio__div">

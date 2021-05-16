@@ -42,13 +42,7 @@ export default function ProjectsGridScreen({year, postId}) {
                         </a>
                     </div>
                 ))}
-                <div class="item">item 1</div>
-                <div class="item">item 2</div>
-                <div class="item">item 3</div>
-                <div class="item">item 1</div>
-                <div class="item">item 2</div>
-                <div class="item">item 3</div>
-                <div class="item">item 1</div>
+
             </div>
         </div>
     )
