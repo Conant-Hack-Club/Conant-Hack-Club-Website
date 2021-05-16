@@ -2,6 +2,7 @@ import React, { useEffect, useState } from 'react'
 import {Carousel, NavDropdown} from "react-bootstrap";
 import logo from "../static/images/conantSchool.jpg";
 import {db} from "./firebase"
+import "../static/css/carouselImg.css";
 
 export default function ProjectsCarouselScreen({year, postId}) {
 
@@ -25,10 +26,12 @@ export default function ProjectsCarouselScreen({year, postId}) {
         projects.map(({id, data}) => (
             <Carousel.Item key={id}>
               <a href = {data.projectUrl}>
-              <div style={{justifyContent:'center', textAlign: 'center', alignItems:'center', backgroundColor:"rgb(209, 216, 236)"}}>
+              <div style={{justifyContent:'center', textAlign: 'center', alignItems:'center', backgroundColor:"#0065ea"}}>
               <img
                   src={data.picturesrc}
 
+                  // className="person__pic"
+                  style={{zIndex: "10", position: "sticky"}}
                   alt = {data.name}
                   width="auto"
                   height = {800}
@@ -36,9 +39,9 @@ export default function ProjectsCarouselScreen({year, postId}) {
               </div>
               </a>
               <Carousel.Caption>
-                <h2>{data.name}</h2>
-                <h3>{data.creator}</h3>
-                <p>
+                <h2 style={{zIndex: "12"}}>{data.name}</h2>
+                <h3 style={{zIndex: "12"}}>{data.creator}</h3>
+                <p style={{zIndex: "12"}}>
                   {data.description}
                 </p>
               </Carousel.Caption>

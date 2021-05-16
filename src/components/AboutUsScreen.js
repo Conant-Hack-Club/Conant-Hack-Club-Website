@@ -18,14 +18,17 @@ export default function AboutUsScreen() {
       <br></br>
       <br></br>
       <br></br>
+      <br></br>
+      <br></br>
+      <br></br>
       <h1 className="about__us" style = {{color: 'white'}}>About The Leaders</h1>
       <div className="leaders__page" >
         <div className="leaders__div" onClick={clickAshay}>
           <div className="bio__div">
             Ashay Parikh
           </div>
-          <div className="pic__div">
-            <img className="person__pic" src="/ashay.jpg" alt="ASHAY"></img>
+          <div>
+            <img className="person__pic" src="/ashay.jpg" alt="ASHAY" ></img>
           </div>
         </div>
         <div className="leaders__div" onClick={clickLabdhi}>

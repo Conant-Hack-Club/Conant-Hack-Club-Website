@@ -1,0 +1,6 @@
+.person__pic{
+    z-index: 11;
+    /* position: sticky; */
+    width: auto;
+    height: 800px
+}

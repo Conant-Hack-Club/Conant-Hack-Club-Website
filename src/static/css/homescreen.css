@@ -242,9 +242,9 @@ left: 85%;
 
 
 .person__pic{
-    max-width:350px;
-    max-height:350px;
-    width: auto;
+    min-width:350px;
+    min-height:350px;
+    width: 40%;
     height: auto;
     z-index: 11;
 }

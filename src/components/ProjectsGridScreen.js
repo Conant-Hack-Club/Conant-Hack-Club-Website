@@ -27,13 +27,15 @@ export default function ProjectsGridScreen({year, postId}) {
                     // <Carousel.Item key={id}>
                     <div class="item">
                         <a href = {data.projectUrl}>
-                            <div style={{justifyContent:'center', textAlign: 'center', alignItems:'center', backgroundColor:"rgb(209, 216, 236)"}}>
+                            <div style={{justifyContent:'center', textAlign: 'center', alignItems:'center', backgroundColor:"rgb(209, 216, 236)", minHeight:"200px"}}>
                                 <img
                                     src={data.picturesrc}
-
-                                    alt = {data.name}
+                                    style={{zIndex: "11", position: "sticky"}}
                                     width="100%"
                                     height = "auto"
+
+                                    alt = {data.name}
+                                    
                                 />
                                 <h3>{data.name}</h3>
                                 <h5>{data.creator}</h5>
