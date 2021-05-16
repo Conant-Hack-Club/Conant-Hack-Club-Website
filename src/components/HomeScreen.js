@@ -23,7 +23,7 @@ export default function HomeScreen() {
             <div className = "textBox">
                 <h1 className = "textStyle">We are Conant Hack Club</h1>
                 <br></br>
-                <img className="person__pic" src="/conantlogo.png" alt="AryanGupta"></img>
+                <img className="person__pic" src="/conantlogo.png" alt="ConantLogo"></img>
                 <br></br>
 
                 <h2 style={{color: "#0065ea"}}>What we do:</h2>

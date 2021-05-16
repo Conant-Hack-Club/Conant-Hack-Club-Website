@@ -20,7 +20,7 @@ export default function ProjectsGridScreen({year, postId}) {
     return (
         <div>
             <br></br>
-            <h1>Projects for the year 2020-2021</h1>
+            <h1 style={{color:'white'}}>Projects for the year 2020-2021</h1>
             <br></br>
             <div class="grid">{
                 projects.map(({id, data}) => (
