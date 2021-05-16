@@ -23,16 +23,17 @@ export default function HomeScreen() {
             <div className = "textBox">
                 <h1 className = "textStyle">We are Conant Hack Club</h1>
                 <br></br>
+                <img className="person__pic" src="/conantlogo.png" alt="AryanGupta"></img>
                 <br></br>
 
                 <h2 style={{color: "#0065ea"}}>What we do:</h2>
-                <h5 style={{color: "#0065ea"}}>Conant Hack Club is a group full of enthusiastic students willing to explore 
-                Computer Science beyond the scope of the classroom. Our goal is to push the limits of our mind and 
+                <h5 style={{color: "#0065ea"}}>Conant Hack Club is a group full of enthusiastic students willing to explore
+                Computer Science beyond the scope of the classroom. Our goal is to push the limits of our mind and
                 share our knowledge with others. </h5>
                 <h5 style={{color: "#0065ea"}}>We explore topics in AI, Unity, Neural Networks, Cloud Computing, and more!</h5>
                 <h5 style={{color: "#0065ea"}}>Join us in exploring the wonderful subject known as Computer Science </h5>
             </div>
-            
+
             <div class='light x1'></div>
             <div class='light x2'></div>
             <div class='light x3'></div>
@@ -43,6 +44,6 @@ export default function HomeScreen() {
         <div class='light x8'></div>
   <div class='light x9'></div>
         </div>
-        
+
     )
 }
