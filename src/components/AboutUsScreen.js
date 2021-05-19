@@ -1,16 +1,20 @@
 import React from 'react'
 import '../static/css/aboutUs.css'
+import "../static/css/background.css";
 
 export default function AboutUsScreen() {
 
   function clickAshay(){
-    console.log('The Ashay was clicked.');
+    window.open(
+      'https://ashayp.com',
+      '_blank'
+    );
   }
   function clickLabdhi(){
-    console.log('The Labdhi was clicked.');
+
   }
   function clickSohum(){
-    console.log('The Sohum was clicked.');
+
   }
 
   return (
@@ -21,12 +25,15 @@ export default function AboutUsScreen() {
       <br></br>
       <br></br>
       <br></br>
-      <h1 className="about__us" style = {{color: 'white'}}>About The Leaders</h1>
+      <h1 className="about__us" style = {{color: 'white'}}>Founders</h1>
       <div className="leaders__page" >
         <div className="leaders__div" onClick={clickAshay}>
           <div className="bio__div">
             Ashay Parikh
+            <p className = "bioText">Conant Class of 2021<hr></hr>Now: University of Illinois at Urbana-Champaign</p>
+            
           </div>
+          <br></br>
           <div>
             <img className="person__pic" src="/ashay.jpg" alt="ASHAY" ></img>
           </div>
@@ -37,11 +44,13 @@ export default function AboutUsScreen() {
           </div>
           <div className="bio__div">
             Labdhi Jain
+            <p className = "bioText">Conant Class of 2021<hr></hr>Now: University of Illinois at Urbana-Champaign</p>
           </div>
         </div>
         <div className="leaders__div" onClick={clickSohum}>
           <div className="bio__div">
             Sohum Bhole
+            <p className = "bioText">Conant Class of 2021</p>
           </div>
           <div className="pic__div">
             <img className="person__pic" src="sohum.jpg" alt="SOHUM"></img>

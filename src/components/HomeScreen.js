@@ -4,35 +4,33 @@ import "bootstrap/dist/css/bootstrap.min.css";
 import  MediaScreen from "./MediaScreen"
 import CalendarHome from "./CalendarHome";
 import "../static/css/homescreen.css";
+import "../static/css/background.css";
+import Button from 'react-bootstrap/Button';
 
 export default function HomeScreen() {
     return (
         <div className = "homeStyle" >
-            {/* <div>
-                <CarouselScreen/>
-            </div> */}
             <br/>
             <br/>
-            <div className = "mainHome">
-                {/* <MediaScreen /> */}
-                <br></br>
-                {/* <CalendarHome /> */}
-            </div>
             <br/>
             <br/>
             <div className = "textBox">
                 <br></br>
-                <h1 className = "textStyle">We are Conant Hack Club</h1>
+                <h1 className = "textStyle">Conant HS Hack Club</h1>
                 <br></br>
-                <img src="/conantlogo.png" alt="ConantLogo"></img>
+                <img src="/conantlogo.png" className = "homeImg" alt="ConantLogo"></img>
                 <br></br>
 
-                <h2 style={{color: "#0065ea"}}>What we do:</h2>
-                <h5 style={{color: "#0065ea",margin:"16px"}}>Conant Hack Club is a group full of enthusiastic students willing to explore
-                Computer Science beyond the scope of the classroom. Our goal is to push the limits of our mind and
-                share our knowledge with others. </h5>
-                <h5 style={{color: "#0065ea",margin:"16px"}}>We explore topics in AI, Unity, Neural Networks, Cloud Computing, and more!</h5>
-                <h5 style={{color: "#0065ea",margin:"16px"}}>Join us in exploring the wonderful subject known as Computer Science </h5>
+                <h5 style={{margin:"16px"}}>Coding, creativity, collaboration, and fun</h5>
+                <Button variant="primary" style = {{backgroundColor: "#338eda", borderColor: "#338eda"}}>Artificial Intelligence</Button>{' '}
+                <Button variant="secondary" style = {{backgroundColor: "#ec3750", borderColor: "#ec3750"}}>Unity</Button>{' '}
+                <Button variant="success" style = {{backgroundColor: "#ff8c37", borderColor: "#ff8c37"}}>Web Scraping</Button>{' '}
+                <Button variant="warning" style = {{backgroundColor: "#f1c40f", borderColor: "#f1c40f"}}>Python Simulations</Button>{' '}
+                <Button variant="danger" style = {{backgroundColor: "#33d6a6", borderColor: "#33d6a6"}}>React.js</Button> {' '}
+                <Button variant="info" style = {{backgroundColor: "#a633d6", borderColor: "#a633d6"}}>APIs</Button>{' '}<p>and much, much more...</p>
+               
+                <h5 className = "crossed" style={{margin:"16px"}}>Join us every Wednesday from 3:30 - 4:30 PM in the Media Center!</h5>
+                <h5 style={{margin:"16px"}}>Currently on summer vacation, see you next school year👋</h5>
             </div>
 
             <div class='light x1'></div>
@@ -42,8 +40,8 @@ export default function HomeScreen() {
             <div class='light x5'></div>
             <div class='light x6'></div>
             <div class='light x7'></div>
-        <div class='light x8'></div>
-  <div class='light x9'></div>
+            <div class='light x8'></div>
+            <div class='light x9'></div>
         </div>
 
     )

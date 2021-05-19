@@ -2,36 +2,51 @@ import React, { useEffect, useState }  from 'react'
 import "../static/css/projectsscreen.css";
 import {db} from "./firebase"
 
-export default function ProjectsGridScreen({year, postId}) {
+export default function ProjectsGridScreen({year}) {
     const [projects, setProjects] = useState([])
+    const [info, setInfo] = useState("")
 
     useEffect(() => {
-  
-      console.log(year)
-  
-      db.collection('years').doc(postId).collection("projects").onSnapshot((snapshot) => {
+    
+      db.collection('years').doc(year).collection("projects").onSnapshot((snapshot) => {
         setProjects(snapshot.docs.map((doc) => ({
           data: doc.data()
         })));
       })
-  
+
+      var docRef = db.collection('years').doc(year)
+
+    docRef.get().then((doc) => {
+        if (doc.exists) {
+            let data = doc.data();
+            setInfo(data.info)
+        } else {
+            // doc.data() will be undefined in this case
+            console.log("No such document!");
+        }
+    }).catch((error) => {
+        console.log("Error getting document:", error);
+    });
+
     }, [])
 
     return (
         <div>
             <br></br>
-            <h1 style={{color:'white',justifyContent:'center', textAlign: 'center', alignItems:'center'}}>Projects for the year 2020-2021</h1>
+            <h1 style={{color:'white',justifyContent:'center', textAlign: 'center', alignItems:'center'}}>{year} Projects</h1>
+            <br></br>
+            <p style={{color:'white', textAlign: 'center'}}>{info}</p>
             <br></br>
             <div class="grid">{
                 projects.map(({id, data}) => (
                     // <Carousel.Item key={id}>
                     <div class="item">
-                        <a href = {data.projectUrl}>
-                            <div style={{justifyContent:'center', textAlign: 'center', alignItems:'center', backgroundColor:"rgb(209, 216, 236)", minHeight:"200px"}}>
+                        <a href = {data.projectUrl} target="blank">
+                            <div style={{justifyContent:'center', textAlign: 'center', alignItems:'center', minHeight:"200px"}}>
                                 <img
-                                    src={data.picturesrc}
+                                    src={data.pictureSrc}
                                     style={{zIndex: "11", position: "sticky"}}
-                                    width="100%"
+                                    width="50%"
                                     height = "auto"
 
                                     alt = {data.name}
@@ -46,6 +61,9 @@ export default function ProjectsGridScreen({year, postId}) {
                 ))}
 
             </div>
+            <br></br>
+            <br></br>
+            <br></br>
         </div>
     )
 }

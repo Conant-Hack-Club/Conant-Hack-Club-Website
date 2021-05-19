@@ -1,5 +1,6 @@
 import React from 'react'
 import "../static/css/resourcesScreen.css";
+import "../static/css/background.css";
 
 export default function ResourcesScreen() {
     return (
@@ -15,7 +16,7 @@ export default function ResourcesScreen() {
             
             <div className="topic_div" style={{width:"auto"}}>
                 <br></br>
-                <h3 style={{color:"black"}}>Artifical Intelligence</h3>
+                <h3 style={{color:"black", fontWeight: "bold"}}>Artifical Intelligence</h3>
                 <br></br>
                 <p className="typer"><a href="https://deepmind.com/blog/article/alphafold-a-solution-to-a-50-year-old-grand-challenge-in-biology "> Blog about Alphafold, which uses AI to predict protein folding. </a></p>
                 <p className="typer"><a href="https://www.youtube.com/watch?v=W7wJDJ56c88&ab_channel=LexFridman"> Video explaining Alphafold </a></p>
@@ -27,17 +28,21 @@ export default function ResourcesScreen() {
                 <p className="typer"><a href="https://medium.com/x8-the-ai-community/machine-learning-hardware-1dac168423fd"> Article on Machine Learning Hardware </a></p>
                 <br></br>
                 <p className="typer"><a href="https://medium.com/machine-learning-in-practice/over-150-of-the-best-machine-learning-nlp-and-python-tutorials-ive-found-ffce2939bd78"> A LOT of Machine Learning tutorials in Python. Please check it out in your free time or weekends </a></p>
+               
+
                 </div>
-            <br></br>
+
             <div className="topic_div" style={{width:"auto"}}>
                 <br></br>
-                <h3 style={{color:"black"}}>Unity</h3>
+                <h3 style={{color:"black", fontWeight: "bold"}}>Unity</h3>
                 <br></br>
                 <p className="typer"><a href="https://store.unity.com/download-nuo"> Download Unity </a></p>
                 <p className="typer"><a href="https://www.youtube.com/watch?v=7K2SMZQRKnw"> Basics 37 min tutorial in Unity </a></p>
                 <p className="typer"><a href="https://www.youtube.com/watch?v=q5ejxITvEh8"> Downloading assets </a></p>
-            </div>
-            <div className='light x1'></div>
+
+                </div>
+        
+            {/* <div className='light x1'></div>
             <div className='light x2'></div>
             <div className='light x3'></div>
             <div className='light x4'></div>
@@ -45,7 +50,7 @@ export default function ResourcesScreen() {
             <div className='light x6'></div>
             <div className='light x7'></div>
             <div className='light x8'></div>
-            <div className='light x9'></div>
+            <div className='light x9'></div> */}
 
         </div>
     )

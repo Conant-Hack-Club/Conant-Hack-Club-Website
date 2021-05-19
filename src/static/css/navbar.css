@@ -3,9 +3,26 @@
   align-items: center;
 }
 .navbar-brand img {
-  padding: 7px 14px;
+  padding: 3px 14px;
 }
 
 #image{
   size: 70vhc;
+}
+
+.color-nav {
+  background-color: white !important;
+}
+
+.color-navlink {
+  /* background-color: #000068 !important; */
+  color: #000068 !important;
+}
+
+#color-dropdown {
+  color: #000068 !important;
+}
+
+#color-dropdown2 {
+  color: #000068 !important;
 }
