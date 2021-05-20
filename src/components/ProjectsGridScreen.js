@@ -5,6 +5,7 @@ import {db} from "./firebase"
 export default function ProjectsGridScreen({year}) {
     const [projects, setProjects] = useState([])
     const [info, setInfo] = useState("")
+    const [picture, setPicture] = useState("")
 
     useEffect(() => {
     
@@ -20,6 +21,7 @@ export default function ProjectsGridScreen({year}) {
         if (doc.exists) {
             let data = doc.data();
             setInfo(data.info)
+            setPicture(data.picture)
         } else {
             // doc.data() will be undefined in this case
             console.log("No such document!");
@@ -28,12 +30,23 @@ export default function ProjectsGridScreen({year}) {
         console.log("Error getting document:", error);
     });
 
+
     }, [])
 
     return (
         <div>
             <br></br>
             <h1 style={{color:'white',justifyContent:'center', textAlign: 'center', alignItems:'center'}}>{year} Projects</h1>
+            <br></br>
+            <img
+                src={picture}
+                className = "image"
+                width="25%"
+                height = "auto"
+
+                alt = {"Conant Hack Club"}
+                
+            />
             <br></br>
             <p style={{color:'white', textAlign: 'center'}}>{info}</p>
             <br></br>
@@ -46,8 +59,8 @@ export default function ProjectsGridScreen({year}) {
                                 <img
                                     src={data.pictureSrc}
                                     style={{zIndex: "11", position: "sticky"}}
-                                    width="50%"
-                                    height = "auto"
+                                    width="90%"
+                                    // height = "auto"
 
                                     alt = {data.name}
                                     
