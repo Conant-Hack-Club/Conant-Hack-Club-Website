@@ -29,8 +29,9 @@ export default function HomeScreen() {
                 <Button variant="danger" style = {{backgroundColor: "#33d6a6", borderColor: "#33d6a6"}}>React.js</Button> {' '}
                 <Button variant="info" style = {{backgroundColor: "#a633d6", borderColor: "#a633d6"}}>APIs</Button>{' '}<p>and much, much more...</p>
                
-                <h5 className = "crossed" style={{margin:"16px"}}>Join us every Wednesday from 3:30 - 4:30 PM in the Media Center!</h5>
-                <h5 style={{margin:"16px"}}>Currently on summer vacation, see you next school year👋</h5>
+                {/* <h5 className = "crossed" style={{margin:"16px"}}>Join us every Wednesday from 3:30 - 4:30 PM in the Media Center!</h5> */}
+                <h5 style={{margin:"16px"}}>Join us on September 1st from 3:30 - 4:30 PM in the Media Center for our first meeting!</h5>
+                {/* <h5 style={{margin:"16px"}}>Currently on summer vacation, see you next school year👋</h5> */}
             </div>
 
             <div class='light x1'></div>
