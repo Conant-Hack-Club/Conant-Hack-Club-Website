@@ -25,6 +25,46 @@ export default function AboutUsScreen() {
       <br></br>
       <br></br>
       <br></br>
+      <h1 className="about__us" style = {{color: 'white'}}>Leaders</h1>
+      <div className="leaders__page" >
+        <div className="leaders__div" onClick={clickAshay}>
+          <div className="bio__div">
+            Ronit Anandani
+            <p className = "bioText">Leader<hr></hr></p>
+          </div>
+          <br></br>
+          <div>
+            <img className="person__pic" src="/ronit.PNG" alt="RONIT" ></img>
+          </div>
+        </div>
+        <div className="leaders__div" onClick={clickLabdhi}>
+          <div className="pic__div" >
+            <img className="person__pic" src="/khush.png" alt="KHUSH" ></img>
+          </div>
+          <div className="bio__div">
+            Khush Makadia
+            <p className = "bioText">Leader<hr></hr></p>
+          </div>
+        </div>
+        <div className="leaders__div" onClick={clickSohum}>
+          <div className="bio__div">
+            Soham Gupta
+            <p className = "bioText">Leader-In-Training</p>
+          </div>
+          <div className="pic__div">
+            <img className="person__pic" src="soham.png" alt="SOHUM"></img>
+          </div>
+        </div>
+        <div className="leaders__div" onClick={clickSohum}>
+          <div className="pic__div">
+            <img className="person__pic" src="abhay.png" alt="ABHAY"></img>
+          </div>
+          <div className="bio__div">
+            Abhay Paidipalli
+            <p className = "bioText">Leader-In-Training</p>
+          </div>
+        </div>
+      </div>
       <h1 className="about__us" style = {{color: 'white'}}>Founders</h1>
       <div className="leaders__page" >
         <div className="leaders__div" onClick={clickAshay}>
